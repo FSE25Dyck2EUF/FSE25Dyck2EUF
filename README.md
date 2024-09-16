@@ -5,7 +5,7 @@ This is the artifact of submission #847 (**SMT-based Solving Dyck-Reachability w
 # Prerequisites
 + Hardware: ~2.50 GHz CPU (all experiments were performed on a desktop with 11th Gen Intel(R) Core(TM) i5-1155G7 @ 2.50GHz 2.50 GHz), 16GB RAM.
 + Unix / Linux OS: We have validated the artifact on Ubuntu system
-+ Python3
++ Python3 >= 3.8
 + Java >= 1.8
 
 # Running the artifact
@@ -83,7 +83,7 @@ cd /Dyck2EUF/benchmark/total_result/
 python3 check.py
 ```
 
-Run the following command to perform statistical analysis on the experimental results. The results from $\bf{Section\ 4.2}$ are in $\bf{/benchmark/total\_result/}$, with $\bf{AliasAnalysis\_result.txt}$ and $\bf{DataDepAnalysis\_result.txt}$ respectively storing the results of alias analysis and data dependence analysis. The experimental results from  $\bf{Section\ 4.3}$ are in folders $\bf{AliasAnalysis\_query}$ and $\bf{DataDepAnalysis\_result}$, saved in $\bf{.dat}$ format (all results are the average of three runs):
+Run the following command to perform statistical analysis on the experimental results. The results from **Section 4.2** are in **/benchmark/total_result/**, with **AliasAnalysis_result.txt** and **DataDepAnalysis_result.txt** respectively storing the results of alias analysis and data dependence analysis. The experimental results from  **Section 4.3** are in folders **AliasAnalysis_query** and **DataDepAnalysis_result**, saved in **.dat** format (all results are the average of three runs):
 
 ```sh
 cd /Dyck2EUF/benchmark/total_result/
@@ -97,10 +97,10 @@ Run the following command to generate a query sequence with a length of 1,000 fo
 cd /Dyck2EUF/benchmark/
 python3 trans_datalog.py
 ```
-Run the following command to evaluate the performance of the Datalog tools Bddbddb and Soufflé on this benchmark:
+Run the following command to evaluate the performance of the Datalog tools **Bddbddb** and **Soufflé** on this benchmark:
 
 ```sh
 cd /Dyck2EUF/benchmark/
 python3 run_datalog_seq.py
 ```
-The run results are in the folder $\bf{/benchmark/datalog\_result}$. The runtime statistics are in $\bf{result.txt}$ (the average of three runs).
+The run results are in the folder **/benchmark/datalog_result**. The runtime statistics are in **result.txt** (the average of three runs).
