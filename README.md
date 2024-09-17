@@ -63,14 +63,14 @@ cd /Dyck2EUF/souffle_test/
 ./souffle example.dl
 ```
 **Reproducing the experimental results presented in the main text.**
-First, we need to generate a total of 10 query sequences for each program, with lengths ranging from 1,000 to 10,000 in increments of 1,000. You can choose to regenerate them or use the existing data. To regenerate the query sequences, run the following code (this step takes approximately 6 minutes on my machine):
+First, we need to generate a total of 10 query sequences for each program, with lengths ranging from 1,000 to 10,000 in increments of 1,000. You can choose to regenerate them or use the existing data. To regenerate the query sequences, run the following code (this step takes about 6 minutes to complete on my machine):
 
 ```sh
 cd /Dyck2EUF/benchmark/
 python3 trans.py
 ```
 
-Next, run Optimal, Z3, CVC5, Yices, and Plat-smt on the benchmark using the following command (this step takes approximately 18 minutes on my machine):
+Next, run Optimal, Z3, CVC5, Yices, and Plat-smt on the benchmark using the following command (this step takes about 18 minutes to complete on my machine):
 
 ```sh
 cd /Dyck2EUF/benchmark/
@@ -97,7 +97,7 @@ Run the following command to generate a query sequence with a length of 1,000 fo
 cd /Dyck2EUF/benchmark/
 python3 trans_datalog.py
 ```
-Run the following command to evaluate the performance of the Datalog tools **Bddbddb** and **Soufflé** on this benchmark:
+Run the following command to evaluate the performance of the Datalog tools **Bddbddb** and **Soufflé** on this benchmark(this step takes about 7.5 hours to complete on my machine):
 
 ```sh
 cd /Dyck2EUF/benchmark/
