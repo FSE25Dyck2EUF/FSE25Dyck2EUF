@@ -67,11 +67,11 @@ for analysisType in analysis_Type:
                           ['java', '-jar', '../bddbddb_test/bddbddb-full.jar', f'./bdd_{analysisType}/{j*1000}/{bm}.datalog'],
                           stdout=outfile,
                           stderr=outfile
-                          
+
                      )
-                     stdout, stderr = process.communicate() 
+                     stdout, stderr = process.communicate()
                 time_end = time.time()
-                print("===============================")
+                print(f"{j*1000}===============================")
                 print(time_end - time_start)
                 print(bm)
                 if j == 0 and analysisType == "AliasAnalysis":
@@ -83,7 +83,7 @@ for analysisType in analysis_Type:
                 if j == 1 and analysisType == "DataDepAnalysis":
                     bdd_dd_time_query[bm_num] += time_end - time_start
 
-                print("===============================")
+                print(f"{j*1000}===============================")
                 print(bm)
                 time_start = time.time()
                 os.system(f"../souffle_test/souffle -D ./datalog_result/souffle/{j*1000}/ ./dl_{analysisType}/{j*1000}/{bm}.dl")
