@@ -11,7 +11,7 @@ This is the artifact of submission #847 (**SMT-based Solving Dyck-Reachability w
 # Running the artifact
 We assume that the following commands are run in sudo mode.
 
-**Run each tool individually**
+**Run each tool individually.**
 We first introduce the method for running each tool individually. Before running the experiments, it is necessary to ensure that each tool is functioning properly.
 
 `Optimal`
@@ -62,8 +62,8 @@ java -jar bddbddb-full.jar example.datalog
 cd /Dyck2EUF/souffle_test/
 ./souffle example.dl
 ```
-**Reproduction of the experimental results in the main text**
-First, we need to generate a total of 10 query sequences with lengths ranging from 1,000 to 10,000, with an increment of 1,000. You can choose to regenerate them or use the existing data. To regenerate the query sequences, run the following code (this step takes approximately 6 minutes on my machine):
+**Reproducing the experimental results presented in the main text.**
+First, we need to generate a total of 10 query sequences for each program, with lengths ranging from 1,000 to 10,000 in increments of 1,000. You can choose to regenerate them or use the existing data. To regenerate the query sequences, run the following code (this step takes approximately 6 minutes on my machine):
 
 ```sh
 cd /Dyck2EUF/benchmark/
@@ -90,7 +90,7 @@ cd /Dyck2EUF/benchmark/total_result/
 python3 get_result.py
 ```
 
-**Reproducing the experimental results of the Datalog tool in the appendix**
+**Reproducing the experimental results of the Datalog tool provided in the appendix.**
 Run the following command to generate a query sequence with a length of 1,000 for each program:
 
 ```sh
