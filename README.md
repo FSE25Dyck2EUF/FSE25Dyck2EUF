@@ -1,4 +1,4 @@
-# Artifact description
+# Dyck2EUF
 This is the artifact of submission #847 (**SMT-based Solving Dyck-Reachability with Applications to Static Analysis**) in FSE 2025.
 
 
